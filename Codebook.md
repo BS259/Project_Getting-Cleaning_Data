@@ -46,6 +46,7 @@ contents <- list(unzip("./Data_cleaning/Project"))
 test <- list()
 
 #This for loop uses the indexes of files in contents and reads in files into the list test as seperate elments.
+
 for(i in 5:16){
   cols <- read.csv(contents[[1]][i], header = FALSE, sep = "")
   test[[abs(4-i)]] <- cols
@@ -76,6 +77,7 @@ names(test) <- c(rep("", 9), "Subject_id", "Test_Set", "Activity_Labels")
 train <- list()
 
 #This for loop uses the index of files in contents and reads them into the list train as seperate elements.
+
 for(i in 17:28){
 colss <- read.csv(contents[[1]][i], sep = "", header = F)
   train[[abs(16-i)]] <- colss
