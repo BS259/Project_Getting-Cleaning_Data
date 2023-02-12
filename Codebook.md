@@ -28,7 +28,7 @@ download.file(fileurl, "./Data_cleaning/Project")
 #To see the contents of the downloaded zip file, use
 contents <- list(unzip("./Data_cleaning/Project"))
 
-#We have to merge the train and tests datasets. Lets see the common columns in them.
+#Create an empty list test, that will evetually contain all the testing data.
 test <- list()
 for(i in 5:16){
   cols <- read.csv(contents[[1]][i], header = FALSE, sep = "")
