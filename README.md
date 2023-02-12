@@ -69,4 +69,5 @@ The initial experiment data can be found here:
 
 # Contents
 This repo contains the following files:
-1. Codebook.md, which gives the code for performing operations on the initial dataset.
+1. Codebook.md, which gives the variables and explains the code used for performing operations on the initial dataset.
+2. run_analysis.R, which gives the code for data analysis.
