@@ -55,3 +55,5 @@ Fit$Activity_Labels <- factor(activity_labels[str_sub(Fit$Activity_Labels, 1)], 
 library(dplyr)
 
 Fit2 <- Fit %>% group_by(Subject_id, Activity_Labels) %>% arrange(Subject_id, Activity_Labels) %>% summarise_all(mean)
+
+View(Fit2)
