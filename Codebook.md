@@ -3,15 +3,25 @@
 
 # Variables/Objects Explained
 fileurl: Contains the web link for downloading the data. This provides the data in zip format. 
+
 "./Data_cleaning/Project": This is the address for storing the downloaded contents. The repository is 'Data Cleaning' with the folder named 'Project'.
+
 contents: A list of all the files that are in the Project folder after they are unzipped using the unzip function.
+
 test: An empty list that ultimately stores data from files created as testing data.
+
 train: An empty list that ultimately stores data from files created as training data.
+
 features: This stores the name of all the features (total 561) on which observations are made.
+
 Testing: Data related to subjects in testing on each feature along with their id and the activity performed.
+
 Training: Data related to subjects in training on each feature along with their id and the activity performed.
+
 activity_labels: This is used to replace the activity labels (1, 2, 3, 4, 5, 6) with their activity names.
+
 Fit: The combined dataset that contains information on all subjects of their performance in each activity.
+
 Fit2: This is the final dataset that groups the subjects and the activity performed and computes the average feature value for each group.
 
 # Packages Required
